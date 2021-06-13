@@ -1,0 +1,558 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  background: #fff;
+  color: #222;
+  cursor: auto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+header {
+  background-image: url("../img/y-so-serious.png");
+  margin: 0;
+  border-bottom: 3px solid hsl(196, 68.3%, 52.9%);
+}
+a {
+  display: inline-block;
+
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.button {
+  background-color: transparent !important;
+  padding: 0px;
+}
+.row.mt {
+  margin-top: 1.25em;
+}
+.row.mb {
+  margin-bottom: 1.25em;
+}
+.pad {
+  padding: 15px;
+}
+.spad {
+  padding: 5px;
+}
+.lpad {
+  padding: 20px;
+}
+.ar {
+  text-align: right;
+}
+.logo img {
+  height: 50px !important;
+}
+nav.menu {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+nav.menu a {
+  margin: 0 7px;
+  color: hsl(0, 0%, 70%);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0px !important;
+  padding-top: 10px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%;
+}
+nav.menu {
+  float: right;
+}
+nav.menu a.current {
+  color: hsl(0, 0%, 100%);
+}
+
+.top-msg {
+  border-bottom: 5px solid hsla(0, 0%, 90%, 0.3) !important;
+  width: 100%;
+  color: hsl(0, 0%, 40%);
+  font-size: 13px;
+  font-weight: 300;
+}
+.top-msg a {
+  color: inherit !important;
+}
+.breadcrumb a {
+  transition: color 0.5s;
+}
+.breadcrumb a:hover {
+  color: hsl(0, 0%, 20%);
+}
+.breadcrumb a:after {
+  content: "\00a0\00a0\002F\00a0\00a0";
+  color: hsl(0, 0%, 70%);
+}
+.breadcrumb a:last-child:after {
+  content: "\00a0\00a0\002F\00a0\00a0";
+  color: hsl(0, 0%, 70%);
+}
+a.primary {
+  color: hsl(0, 0%, 70%);
+  transition: color 0.5s;
+}
+a.primary:hover {
+  color: hsl(196, 68.3%, 52.9%);
+}
+a.underline {
+  color: hsl(0, 0%, 70%);
+}
+a.underline:hover:after {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: hsl(196, 68.3%, 52.9%);
+  margin-bottom: -2px;
+  animation: link 0.9s ease;
+}
+@keyframes link {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* Topic */
+.rounded {
+  overflow: hidden;
+}
+.rounded.top {
+  border-radius: 4px 4px 0 0;
+}
+.rounded.all {
+  border-radius: 4px;
+}
+.forum-category {
+  background-color: hsl(196, 68.3%, 52.9%);
+
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 13px;
+  text-shadow: 0 1px 1px hsl(196, 68.3%, 52.9%);
+}
+.forum-head > .column {
+  background-color: hsl(206, 35%, 13%);
+  border-right: 1px solid hsl(212, 35%, 15%);
+  border-left: 1px solid hsl(212, 28%, 12%);
+
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 12px;
+  text-shadow: 0 1px 1px hsl(0, 0%, 0%);
+  text-align: center;
+}
+.forum-head > .column:first-child {
+  text-align: left;
+  border-left: none;
+}
+.forum-head > .column:last-child {
+  border-right: none;
+}
+.forum-topic > .column {
+  min-height: 71px;
+  max-height: 71px;
+  background-color: hsl(0, 0%, 96%);
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 50%);
+  font-size: 12px;
+}
+.forum-topic > .column:first-child {
+  color: hsl(0, 0%, 60%);
+  font-size: 30px;
+  text-align: center;
+}
+.forum-topic > .column:nth-child(n + 3) {
+  text-align: center;
+}
+.forum-topic > .column:last-child {
+  text-align: left;
+}
+.forum-topic a {
+  transition: color 0.5s;
+
+  color: hsl(196, 68.3%, 52.9%);
+  font-weight: 600;
+}
+.forum-topic a:hover {
+  color: hsl(196, 68.3%, 52.9%);
+}
+.forum-topic span {
+  display: block;
+  margin: 0 0 2px 0;
+}
+.overflow-control {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.forum-topic .column:nth-child(2) span.overflow-control {
+  width: 70%;
+}
+.forum-topic span.center {
+  padding-top: 10px;
+}
+.normal {
+  background-color: hsl(0, 0%, 96%);
+
+  color: hsl(0, 0%, 50%);
+  font-size: 12px;
+}
+.normal h1.inset {
+  background-color: hsl(206, 35%, 13%);
+  margin: -20px -20px 20px -20px;
+
+  color: hsl(0, 0%, 100%);
+  padding: 15px 20px 15px 20px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.normal p {
+  margin: 0 0 40px 0;
+  line-height: 20px;
+}
+.normal p:last-child {
+  margin: 0;
+}
+#top-button {
+  display: none;
+  width: 27px;
+  background-color: hsl(206, 35%, 13%);
+  position: fixed;
+  right: 60px;
+  bottom: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  padding: 5px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+#top-button.show {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo,
+  nav {
+    text-align: center;
+  }
+  nav.menu a {
+    margin: 7px;
+    text-decoration: none !important;
+  }
+  .button {
+    background-color: none !important;
+  }
+  .breadcrumb,
+  .forum-head > .column:nth-child(2),
+  .forum-head > .column:nth-child(3),
+  .forum-topic > .column:first-child,
+  .forum-topic > .column:nth-child(3),
+  .forum-topic > .column:nth-child(4),
+  #top-button {
+    display: none;
+  }
+  .forum-category > span,
+  .forum-category > .column:first-child,
+  .forum-head > .column,
+  .forum-topic > .column,
+  .normal,
+  .normal h1.inset {
+    font-size: 10px;
+    text-align: left;
+  }
+  .forum-head > .column {
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-weight: 600;
+  }
+  .rounded,
+  .rounded.top,
+  .rounded.all {
+    border-radius: 0;
+  }
+  .overflow-control > a,
+  .overflow-control {
+    display: block;
+    width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .breadcrumb a:nth-child(2) {
+    margin: 3px 0 3px 10px;
+  }
+  .breadcrumb a:nth-child(3) {
+    margin: 3px 0 3px 20px;
+  }
+  .breadcrumb a:nth-child(4) {
+    margin: 3px 0 3px 30px;
+  }
+  .breadcrumb a:after {
+    display: none;
+  }
+}
+.panel {
+  padding: 10px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.profile-left {
+  padding-right: 20px;
+  width: 18%;
+  padding: 0px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.profile-left img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.profile-right {
+  width: 82%;
+  border-radius: 5px;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.prof-element {
+  background: #f2f2f2;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left !important;
+  border-radius: 5px;
+}
+.prof-element.extra-info {
+  margin-top: 0;
+}
+
+.prof-element img {
+  border-radius: 75%;
+  width: 90%;
+}
+
+.prof-head {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.192);
+  padding: 10px 15px 10px 15px;
+}
+.statistic {
+  text-align: center;
+}
+.pairs.pairs-justified {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pairs {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+  overflow: hidden;
+  line-height: 1.7 !important;
+  font-size: 0.8rem;
+}
+.pairs.pairs--justified > dt {
+  float: left;
+  max-width: 100%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.pairs > dt {
+  padding: 0;
+  margin: 0;
+  color: #b5b9c0;
+}
+
+.pairs.pairs--justified > dd {
+  float: right;
+  text-align: right;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pairs > dd {
+  padding: 0;
+  margin: 0;
+}
+.page-counter {
+  padding: 15px;
+}
+.page-counter .count {
+  font-size: 19px;
+  color: hsl(196, 68.3%, 52.9%);
+  padding-bottom: 3px;
+  line-height: 21px;
+}
+.muted:hover {
+  color: rgb(214, 214, 214) !important;
+}
+.page-counter .muted {
+  color: rgb(148, 148, 148);
+}
+.profile-right .prof-element {
+  min-height: 308.8px;
+  padding: 5px;
+}
+
+.profile-right .content-element {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.profile-right .content-element-foot {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 3px;
+}
+
+.topics {
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.threads {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.thread-content {
+  width: 100%;
+}
+
+.thread-info {
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 12.5px;
+  border-bottom: 0.6px solid hsl(196, 68.3%, 52.9%);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px hsl(196, 68.3%, 52.9%);
+}
+.thread-info li {
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  list-style: none;
+  display: inline;
+  padding-right: 5px;
+}
+.thread-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.thread-info svg {
+  padding-right: 2px;
+  font-weight: 900 !important;
+  line-height: 1;
+  font-size: 15px;
+}
+.thread-content .column {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.floatr {
+  float: right;
+}
+
+.panel {
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+
+.profile-left {
+  padding-right: 20px;
+  width: 22.5%;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+.profile-left img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.profile-right {
+  width: 77.5%;
+  border-radius: 5px;
+}
+
+.prof-element {
+  background: #f2f2f2;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left !important;
+  border-radius: 5px;
+}
+
+.prof-head {
+  padding: 0 0 15px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.192);
+  padding: 10px 10px 10px;
+}
+.statistic {
+  text-align: center;
+}
+
+.page-counter {
+  padding: 15px;
+}
+.page-counter .count {
+  font-size: 19px;
+  color: hsl(196, 68.3%, 52.9%);
+  padding-bottom: 3px;
+  line-height: 21px;
+}
+.muted:hover {
+  color: rgb(214, 214, 214) !important;
+}
+.page-counter .muted {
+  color: rgb(148, 148, 148);
+}
+
+.account .prof-element {
+  min-height: auto;
+}
+
+.info span {
+  font-size: 14px;
+}

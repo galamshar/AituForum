@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  forumdb:
+    image: postgres
+    environment:
+     POSTGRES_PASSWORD: 0000
+  forum.webapi:
+    image: ${DOCKER_REGISTRY-}forumwebapi
+    build:
+      context: .
+      dockerfile: Forum.WebApi/Dockerfile
+
+  frontend:
+    image: ${DOCKER_REGISTRY-}frontend
+    build:
+      context: .
+      dockerfile: react-api/Dockerfile
