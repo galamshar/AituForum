@@ -1,6 +1,6 @@
 import "../assets/css/style.css";
 import React from "react";
-import { Link, Grid, BreadcrumbItem, Breadcrumbs } from "react-foundation";
+import { Grid, BreadcrumbItem, Breadcrumbs } from "react-foundation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 

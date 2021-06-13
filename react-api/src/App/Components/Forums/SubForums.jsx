@@ -1,10 +1,9 @@
 ﻿import React from "react";
-import ForumsCategory from "./ForumsCategory.jsx";
 import ForumsHeader from "./ForumsHeader.jsx";
 import ForumsContent from "./ForumsContent.jsx";
 import ThreadsHeader from "./ThreadsHeader.jsx";
 import ThreadsContent from "./ThreadsContent.jsx"
-import { Grid, Cell, Row, Column } from "react-foundation";
+import { Row } from "react-foundation";
 import TopicService from "../../../Services/TopicService";
 import { Link } from "react-router-dom";
 

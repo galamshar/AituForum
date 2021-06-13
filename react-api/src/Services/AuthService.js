@@ -1,6 +1,6 @@
 ﻿import axios from 'axios';
 import authHeader from './AuthHeader';
-const API_URL = "https://localhost:44382/api/";
+const API_URL = "http://localhost:8080/api/";
 class AuthService {
     login(username, password) {
         var bodyFormData = new FormData();

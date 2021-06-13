@@ -1,8 +1,4 @@
-FROM node:12.18-alpine
-ENV NODE_ENV=production
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install --production --silent
-COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
+FROM nginx:1.16.0-alpine
+COPY ./react-api/build /var/www
+COPY react-api/nginx.conf /etc/nginx/nginx.conf
+ENTRYPOINT ["nginx","-g","daemon off;"]

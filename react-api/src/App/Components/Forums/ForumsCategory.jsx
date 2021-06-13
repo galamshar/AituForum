@@ -1,8 +1,6 @@
 ﻿import '../../assets/css/style.css'
 import React from 'react';
 import { Grid, Cell } from 'react-foundation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import $ from 'jquery'
 export default class ForumsCategory extends React.Component{
     constructor(props){

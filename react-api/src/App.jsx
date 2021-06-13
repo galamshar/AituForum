@@ -1,14 +1,12 @@
 ﻿import "./App/assets/css/foundation.min.css";
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./App/Components/Header.jsx";
 import Breadcrumbs from "./App/Components/Breadcrumbs.jsx";
 import Forums from "./App/Components/Forums/Forums.jsx";
 import LoginPage from "./App/Components/Login/LoginPage";
 import SubForums from "./App/Components/Forums/SubForums";
 import Thread from "./App/Components/Thread/Thread";
-import { Grid } from "react-foundation";
 import Account from "./App/Components/Account/Account";
 import CreateThread from "./App/Components/Thread/CreateThread";
 export default class App extends React.Component {

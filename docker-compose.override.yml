@@ -1,15 +1,25 @@
 version: '3.4'
 
 services:
+  forumdb:
+    container_name: forumdb
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=0000
+    ports:
+      - 5432:5432 
   forum.webapi:
+    container_name: webapi
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=http://+:80
     ports:
-      - "80:8080"
-      - "443:8081"
+      - "8080:80"
     volumes:
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ~/.aspnet/https:/root/.aspnet/https:ro
+    depends_on:
+      - forumdb
   frontend:
+    container_name: frontend
     ports:
       - "3000:3000"

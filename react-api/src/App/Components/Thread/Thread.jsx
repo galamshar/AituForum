@@ -1,10 +1,9 @@
 ﻿import React from "react";
-import { Grid, Cell, Row, Column } from "react-foundation";
+import { Grid } from "react-foundation";
 import PostContent from "./PostContent";
 import PostingField from "./PostingField";
 import ThreadPostHeader from "./ThreadPostHeader";
 import PostService from "../../../Services/PostService"
-import TopicService from "../../../Services/TopicService"
 import { Redirect } from "react-router-dom";
 export default class Forums extends React.Component {
   constructor(props) {

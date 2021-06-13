@@ -2,7 +2,7 @@ import React from 'react';
 import ForumsCategory from './ForumsCategory.jsx'
 import ForumsHeader from './ForumsHeader.jsx';
 import ForumsContent from './ForumsContent.jsx';
-import { Grid, Cell, Row, Column } from 'react-foundation';
+import { Row } from 'react-foundation';
 
 export default class Forums extends React.Component{
 
@@ -20,7 +20,7 @@ export default class Forums extends React.Component{
     
 
     componentDidMount(){
-        fetch('https://localhost:44382/api/topics/root-topics/?pageNumber=1&pageSize=10')
+        fetch('http://localhost:8080/api/topics/root-topics/?pageNumber=1&pageSize=10')
         .then(res => res.json())
         .then(
             (resultR) => {
@@ -38,7 +38,7 @@ export default class Forums extends React.Component{
         )
         .then(resultR => {
         var urls = []
-        this.state.rtopics.map(rtopic => urls.push('https://localhost:44382/api/topics/sub-topics/?topicId='+rtopic.id+'&pageNumber=1&pageSize=10'))
+        this.state.rtopics.map(rtopic => urls.push('http://localhost:8080/api/topics/sub-topics/?topicId='+rtopic.id+'&pageNumber=1&pageSize=10'))
         var promises = urls.map(url => fetch(url))
         Promise.all(promises)
         .then(responses => Promise.all(responses.map(res => res.json())))
